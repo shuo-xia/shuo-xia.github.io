@@ -113,31 +113,37 @@
 
     /* Styling specific for "Update section"*/
     .list-section {
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
     margin-top: 20px;
     }
 
     .list-section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     }
 
     .list-section li {
+    margin-bottom: 15px; /* Adds spacing between list items */
     display: flex;
-    align-items: baseline;
-    margin-bottom: 10px;
+    flex-direction: column; /* Ensures date and text stack vertically */
     }
 
     .list-section .date {
-    width: 100px; /* Fixed width for uniform alignment */
+   /* width: 100px; /* Fixed width for uniform alignment */
     font-weight: bold; /* Emphasize the date */
     font-family: 'Garamond', serif;
     font-size: 16px; /* Consistent size for the date */
-    text-align: right; /* Align date to the right */
-    margin-right: 15px; /* Spacing between date and text */
-    }
+   /* text-align: right; /* Align date to the right */
+    margin-bottom: 5px; /* Spacing between date and text */
+  }
 
   .list-section .text {
-    flex: 1; /* Text takes remaining space */
+    /*flex: 1; /* Text takes remaining space */
     font-family: 'Garamond', serif;
     font-size: 16px;
     }
