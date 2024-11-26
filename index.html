@@ -97,11 +97,12 @@
       font-size: 20px;
     }
 
-    h1, h2 {
+    /*
+    h1, h2{
       font-family: 'Garamond', serif;
       margin-bottom: 20px;
     }
-
+    */
     ul {
       list-style: none;
       padding: 0;
@@ -113,18 +114,19 @@
 
     /* Styling specific for "Update section"*/
     h2 {
+    margin-top: 30px; /* Adds spacing below the title */
     font-family: 'Garamond', serif;
     font-size: 24px;
     margin-bottom: 10px; /* Adds spacing below the title */
     }
-    
+
     .list-section {
     max-height: 400px; /* Adjust the maximum height as needed */
     overflow-y: auto; /* Allows vertical scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 10px;
    /* border: 1px solid #ccc; /* Optional: Add a border for visibility */
-    margin-top: 20px;
+    margin-top: 10px;
     }
 
     .list-section ul {
@@ -140,16 +142,16 @@
     }
 
     .list-section .date {
-   /* width: 100px; /* Fixed width for uniform alignment */
+    width: 100px; /* Fixed width for uniform alignment */
     font-weight: bold; /* Emphasize the date */
     font-family: 'Garamond', serif;
     font-size: 16px; /* Consistent size for the date */
-   /* text-align: right; /* Align date to the right */
+    text-align: right; /* Align date to the right */
     margin-bottom: 5px; /* Spacing between date and text */
   }
 
   .list-section .text {
-    /*flex: 1; /* Text takes remaining space */
+    flex: 1; /* Text takes remaining space */
     font-family: 'Garamond', serif;
     font-size: 16px;
     }
