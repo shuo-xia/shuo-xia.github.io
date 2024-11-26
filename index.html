@@ -135,19 +135,20 @@
     }
 
     .list-section li {
-    margin-bottom: 15px; /* Adds spacing between list items */
     display: flex;
-    flex-direction: column; /* Ensures date and text stack vertically */
+    align-items: flex-start; /* Align date and text at the top */
+    /*flex-direction: column; /* Ensures date and text stack vertically */
+    margin-bottom: 15px; /* Adds spacing between list items */
     }
 
     .list-section .date {
-    width: 100px; /* Fixed width for uniform alignment */
     font-weight: bold; /* Emphasize the date */
     font-family: 'Garamond', serif;
-    font-size: 16px; /* Consistent size for the date */
-    text-align: right; /* Align date to the right */
-    margin-bottom: 5px; /* Spacing between date and text */
-  }
+    font-size: 16px;
+    width: 150px; /* Fixed width to align all dates */
+    text-align: right; /* Align date text to the right */
+    margin-right: 15px; /* Adds space between date and text */
+    }
 
   .list-section .text {
     flex: 1; /* Text takes remaining space */
