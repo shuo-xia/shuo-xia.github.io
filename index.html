@@ -113,17 +113,15 @@
 
     /* Styling specific for "Update section"*/
     h2 {
-    margin-top: 30px; /* Adds spacing below the title */
     font-family: 'Garamond', serif;
-    /*font-size: 20px;*/
-    margin-bottom: 10px; /* Adds spacing below the title */
+    font-size: 24px;
+    margin-bottom: 24px; /* Adds spacing below the title */
     }
 
     .list-section {
     max-height: 400px; /* Adjust the maximum height as needed */
     overflow-y: auto; /* Allows vertical scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    padding: 10px;
    /* border: 1px solid #ccc; /* Optional: Add a border for visibility */
     margin-top: 10px;
     }
@@ -137,8 +135,8 @@
     .list-section li {
     display: flex;
     align-items: center; /* Align date and text at the top */
-    /*flex-direction: column; /* Ensures date and text stack vertically */
-    margin-bottom: 15px; /* Adds spacing between list items */
+    flex-direction:row; /* Ensures date and text stack horizontally */
+    margin-bottom: 10px; /* Adds spacing between list items */
     }
 
     .list-section .date {
