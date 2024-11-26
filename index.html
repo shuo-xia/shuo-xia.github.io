@@ -16,6 +16,7 @@
       font-size: 18px;
       margin: 0;
       display: flex;
+      flex-wrap: wrap; /* Allows wrapping of sidebar and main content */
       min-height: 100vh;
     }
 
@@ -32,7 +33,34 @@
       left: 0;
       overflow-y: auto;
       text-align: center; /* Aligns all content in the sidebar to the center */
+      transition: all 0.3s ease-in-out; /* Smooth resizing for responsiveness */
     }
+
+    /* Main content styling */
+    .main-content {
+      margin-left: 25%; /* Matches the width of the sidebar */
+      width: 75%;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    @media (max-width: 768px) {
+    body {
+    flex-direction: column; /* Stacks sidebar and main content vertically */
+    }
+
+    .sidebar {
+    width: 100%; /* Takes full width on smaller screens */
+    height: auto; /* Allows content to adjust height dynamically */
+    position: relative; /* Removes fixed positioning */
+    box-shadow: none; /* Removes shadow for a cleaner appearance */
+    }
+
+    .main-content {
+    margin-left: 0; /* Removes left margin to align with sidebar */
+    width: 100%; /* Takes full width on smaller screens */
+    }
+  }
 
     .sidebar img {
       max-width: 100%;
@@ -84,12 +112,7 @@
       color: #007bff;
     }
 
-    /* Main content styling */
-    .main-content {
-      margin-left: 25%;
-      width: 75%;
-      padding: 20px;
-    }
+    /* Navigation bar styling */
 
     nav ul {
       list-style: none;
