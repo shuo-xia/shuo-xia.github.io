@@ -10,8 +10,8 @@ body {
 }
 
 .sidebar {
-    width: 25%; /* Adjust the width as needed */
-    min-width: 250px;
+    width: 25%; /* Ensure this matches the main-content margin */
+    min-width: 250px;  /* Prevent the sidebar from shrinking too much */
     background-color: #f8f9fa;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -22,6 +22,7 @@ body {
     overflow-y: auto;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 .sidebar img {
@@ -56,8 +57,8 @@ body {
 }
 
 .main-content {
-    margin-left: 25%; /* Matches the sidebar width */
-    width: 75%; /* Adjusts to take the remaining space */
+    margin-left: calc(25% + 20px); /* Matches sidebar width + padding */
+    width: calc(75% - 20px); /* Adjusts for remaining space */
     padding: 20px; 
     transition: all 0.3s ease-in-out;
     box-sizing: border-box; /* Ensures padding is included in the width calculation */
