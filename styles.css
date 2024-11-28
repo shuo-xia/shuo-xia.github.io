@@ -64,6 +64,48 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the width calculation */
 }
 
+/*  Scrollable Section style */
+h2 {
+    font-family: 'Garamond', serif;
+    font-size: 24px;
+    margin-bottom: 5px; /* Decrease spacing below the title */
+}
+
+.list-section {
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding: 10px 0; /* Optional: Removes padding for a tighter layout */
+    margin-top: 0; /* Removes unnecessary spacing above the list */
+}
+  
+.list-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.list-section li {
+    display: flex; /* Use flexbox to align date and text on one line */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+  
+.list-section .date {
+    font-weight: bold;
+    font-family: 'Garamond', serif;
+    font-size: 16px;
+    width: 150px; /* Fixed width to align all dates */
+    text-align: right; /* Align date text to the right */
+    margin-right: 15px; /* Spacing between date and text */
+}
+  
+.list-section .text {
+    font-family: 'Garamond', serif;
+    font-size: 16px;
+    flex: 1; /* Ensures the text takes the remaining space */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -79,7 +121,7 @@ nav ul li a {
     font-size: 20px;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Garamond', serif;
     margin-bottom: 20px;
     font-weight: bold;
