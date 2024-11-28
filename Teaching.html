@@ -1,184 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Shuo Xia 夏烁</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Philosopher|Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-body {
-      font-family: 'Garamond', serif;
-      font-size: 18px;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap; /* Allows wrapping of sidebar and main content */
-      min-height: 100vh;
-    }
-
-     /* Sidebar styling */
-     .sidebar {
-      width: 25%;
-      min-width: 250px;
-      background-color: #f8f9fa;
-      padding: 20px;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      overflow-y: auto;
-      text-align: center; /* Aligns all content in the sidebar to the center */
-      transition: all 0.3s ease-in-out; /* Smooth resizing for responsiveness */
-    }
-
-
-     /* Main content styling */
-      .main-content {
-      margin-left: 25%;
-      width: 75%;
-      padding: 20px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    @media (max-width: 768px) {
-  body {
-    flex-direction: column; /* Stacks sidebar and main content vertically */
-  }
-
-  .sidebar {
-    width: 100%; /* Takes full width on smaller screens */
-    height: auto; /* Allows content to adjust height dynamically */
-    position: relative; /* Removes fixed positioning */
-    box-shadow: none; /* Removes shadow for a cleaner appearance */
-  }
-
-  .main-content {
-    margin-left: 0; /* Removes left margin to align with sidebar */
-    width: 100%; /* Takes full width on smaller screens */
-  }
-}
-
-    .sidebar img {
-      max-width: 100%;
-      width: 300px; /* Set the width for the photo */
-      border-radius: 5px;
-      margin: 0 auto 20px auto; /* Centers the image */
-    }
-
-    .sidebar .title-section {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    }
-
-    .sidebar .title-section h1 {
-    margin-top: 100px
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-    text-align: center; /* Center-aligns the title */
-    margin-bottom: 20px;
-    }
-
-    .sidebar .title-section p {
-    font-family: 'Garamond', serif;
-    font-size: 20px;
-    margin: 5px 0 15px 0;
-    line-height: 1.4;
-    text-align: center; /* Center-aligns the position description */
-    }
-
-    .sidebar .email {
-    font-family: 'Garamond', serif;
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: center; /* Aligns email center */
-    }
-
-    .sidebar .contact-info {
-    font-family: 'Garamond', serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: left; /* Aligns contact info to the left for better readability */
-    }
-    .sidebar a {
-      text-decoration: none;
-      color: #007bff;
-    }
-
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    h1, h2 {
-      font-family: 'Garamond', serif;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-  </style>
+    <title>Shuo Xia 夏烁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Title Section -->
-    <div class="title-section">
-      <h1>Shuo Xia (夏烁)</h1>
-      <p>Assistant Professor of Finance<br> 
-      Halle Institute for Economic Research<br>
-      Leipzig University</p> 
-    </div>
-
-    <!-- Profile Image -->
-    <img src="img/Shuo-headshot.png" alt="Headshot of Shuo Xia">
-
-    <!-- Contact Info -->
-    <p class="email">
-      <i class="fa fa-envelope"></i> 
-      <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">shuo.xia[at]iwh-halle.de</a>
-    </p>
-    <p class="contact-info">
-      Department of Financial Markets<br>
-      Halle Institute for Economic Research<br>
-      Kleine Maerkerstr. 8<br>
-      06108 Halle (Saale)<br>
-      Germany<br>
-    </p>
-    <p class="contact-info">
-      <a href="src/Shuo_Xia_cv.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> <i>(Updated Nov 2024)</i><br>
-      <a href="https://scholar.google.com/citations?user=_le-O14AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a><br>
-      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2556755" target="_blank" rel="noopener noreferrer">SSRN</a>
-    </p>
-  </div>
-
+  <!-- Side Bar -->
+  <div id="sidebar"></div>
   <!-- Main Content -->
   <div class="main-content">
     <!-- Navigation -->
@@ -234,6 +66,16 @@ body {
     </div>
     </div>
   </div>
+
+  <script>
+    // Fetch and load the sidebar dynamically
+    fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('sidebar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+</script>
 </body>
 
 </html>

@@ -1,0 +1,124 @@
+/* styles.css */
+
+body {
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    min-width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+}
+
+.sidebar .title-section h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .title-section p,
+.sidebar .email,
+.sidebar .contact-info {
+    font-family: 'Garamond', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1, h2 {
+    font-family: 'Garamond', serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+ol ol {
+    margin-top: 5px;
+    padding-left: 25px;
+    list-style-type: circle;
+    font-size: 0.9em;
+    color: black;
+}
+
+ol ol li {
+    margin-bottom: 7px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
