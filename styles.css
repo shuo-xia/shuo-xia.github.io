@@ -10,13 +10,13 @@ body {
 }
 
 .sidebar {
-    width: 25%;
+    width: 25%; /* Adjust the width as needed */
     min-width: 250px;
     background-color: #f8f9fa;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 100vh;
-    position: fixed;
+    position: fixed; /* Keeps the sidebar fixed */
     top: 0;
     left: 0;
     overflow-y: auto;
@@ -56,10 +56,11 @@ body {
 }
 
 .main-content {
-    margin-left: 25%;
-    width: 75%;
-    padding: 20px;
+    margin-left: 25%; /* Matches the sidebar width */
+    width: 75%; /* Adjusts to take the remaining space */
+    padding: 20px; 
     transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
 }
 
 nav ul {
