@@ -168,11 +168,21 @@ ol ol li {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  align-items: flex-start;
 }
 
 .paper-figure {
   flex: 1;
   max-width: 25%;
+}
+
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .abstract-wrapper {
