@@ -38,6 +38,14 @@
             <li class="paper" words="">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer"><u>Poison Bonds</u></a> 
                 with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
+
+                  <div class="abstract-toggle">Show Abstract</div>
+                  <div class="abstract-content">
+                    <img src="img/PB_PP_Trend.png" alt="Key figure for Poison Bonds" class="paper-figure">
+                    <p>
+                        The rise of poison bonds and the fall of poison pills for investment grade firms.
+                    </p>
+                </div>
                 <ol>
                     <li>On the program of EFA (Scheduled), WFA, NYU/Penn Conference on Law & Finance, Finance Down Under, SGF, FMA Consortium on Asset Management, SFS Cavalcade Asia-Pacific, ECGC, Venice Finance Workshop, FMA Asia/Pacific
                     </li>
@@ -123,6 +131,18 @@
             document.getElementById('sidebar').innerHTML = data;
         })
         .catch(error => console.error('Error loading sidebar:', error));
+    
+  // Abstract toggler
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".abstract-toggle").forEach(button => {
+      button.addEventListener("click", function () {
+        const content = this.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+        this.classList.toggle("open");
+        this.innerHTML = this.classList.contains("open") ? "Hide Abstract ▲" : "Show Abstract ▼";
+      });
+    });
+  });
 </script>
 
 </body>

@@ -136,6 +136,34 @@ ol ol li {
   margin-top: 4px;
 }
 
+.paper-figure {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.abstract-toggle {
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #3366cc;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.abstract-content {
+  display: none;
+  margin-top: 5px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.abstract-toggle::after {
+  content: " ▼";
+  font-size: 0.8em;
+}
+
 
 /* CSS for Scrollable Section */
 
