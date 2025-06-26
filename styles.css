@@ -125,6 +125,18 @@ ol ol li {
     }
 }
 
+.journal-highlight {
+  font-style: italic;
+  font-weight: bold;
+  color: #2a4d69; /* Elegant dark blue */
+  background-color: #eef2f7;
+  padding: 4px 8px;
+  border-left: 4px solid #2a4d69;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+
 /* CSS for Scrollable Section */
 
 .list-section {
