@@ -164,6 +164,28 @@ ol ol li {
   font-size: 0.8em;
 }
 
+.paper-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.paper-figure {
+  flex: 1;
+  max-width: 25%;
+}
+
+.abstract-wrapper {
+  flex: 2;
+  max-width: 50%;
+  padding-left: 15px;
+}
+
+.paper-empty {
+  flex: 1;
+  max-width: 25%;
+}
+
 
 /* CSS for Scrollable Section */
 
