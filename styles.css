@@ -152,16 +152,32 @@ ol ol li {
   margin-top: 5px;
 }
 
+.paper-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.abstract-toggle::after {
+  content: " ▼";
+  font-size: 0.8em;
+}
+.abstract-toggle.active::after {
+  content: " ▲";
+}
+
 .abstract-content {
   display: none;
   margin-top: 5px;
   font-size: 0.95em;
   color: #333;
 }
-
-.abstract-toggle::after {
-  content: " ▼";
-  font-size: 0.8em;
+.abstract-content.show {
+  display: block;
 }
 
 .paper-layout {
@@ -178,8 +194,9 @@ ol ol li {
 
 .paper-figure img {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-height: 240px;
+  max-height: 240px;  /* OR set to something taller like 300px */
   object-fit: contain;
   display: block;
   margin: 0 auto;

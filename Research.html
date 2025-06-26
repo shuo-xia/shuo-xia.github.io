@@ -41,7 +41,7 @@
 
                  <div class="paper-layout">
                     <div class="paper-figure">
-                        <img src="img/PB_PP_Trend.png" alt="Figure" class="paper-figure">
+                        <img src="img/PB_PP_Trend.png" alt="Figure" class="paper-image">
                     </div>
 
                     <div class="abstract-wrapper">
@@ -141,16 +141,15 @@
         .catch(error => console.error('Error loading sidebar:', error));
     
   // Abstract toggler
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".abstract-toggle").forEach(button => {
-      button.addEventListener("click", function () {
-        const content = this.nextElementSibling;
-        content.style.display = (content.style.display === "block") ? "none" : "block";
-        this.classList.toggle("open");
-        this.innerHTML = this.classList.contains("open") ? "Hide Abstract ▲" : "Show Abstract ▼";
-      });
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.abstract-toggle').forEach(btn => {
+            btn.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const abstract = this.nextElementSibling;
+                abstract.classList.toggle('show');
+            });
+        });
     });
-  });
 </script>
 
 </body>
