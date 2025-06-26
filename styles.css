@@ -173,26 +173,25 @@ ol ol li {
 
 .abstract-content {
   display: none;
-  margin-top: 5px;
   font-size: 0.95em;
   color: #333;
-  display: flex;
-  gap: 15px;
-}
-.abstract-content.show {
-  display: block;
 }
 
-.paper-layout {
+.abstract-content.show {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 15px;
+  margin-top: 5px;
   align-items: flex-start;
 }
 
 .paper-figure {
   flex: 1;
   max-width: 25%;
+}
+
+.paper-text {
+  flex: 2;
+  max-width: 75%;
 }
 
 .paper-figure img {
@@ -205,11 +204,6 @@ ol ol li {
   margin: 0 auto;
 }
 
-.abstract-wrapper {
-  flex: 2;
-  max-width: 50%;
-  padding-left: 15px;
-}
 
 .paper-empty {
   flex: 1;
