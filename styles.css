@@ -148,8 +148,9 @@ ol ol li {
   cursor: pointer;
   font-size: 0.9em;
   color: #3366cc;
-  display: inline-block;
-  margin-top: 5px;
+  display: block; /* forces line break */
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .paper-image {
@@ -175,6 +176,8 @@ ol ol li {
   margin-top: 5px;
   font-size: 0.95em;
   color: #333;
+  display: flex;
+  gap: 15px;
 }
 .abstract-content.show {
   display: block;
