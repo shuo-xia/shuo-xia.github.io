@@ -1,89 +1,174 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shuo Xia 夏烁</title>
-  <link rel="stylesheet" href="css/styles.css"/>
-  <script>
-    function toggleAbstract(id) {
-      var abstract = document.getElementById(id);
-      abstract.style.display = abstract.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
+    <title>Shuo Xia 夏烁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="img/Shuo-headshot.png" alt="Shuo Xia">
-      <h1>Shuo Xia 夏烁</h1>
-      <p>Assistant Professor of Finance<br>Halle Institute for Economic Research<br>Leipzig University</p>
-      <p>
-        <a href="mailto:shuo.xia@iwh-halle.de">Email</a><br>
-        <a href="https://scholar.google.com/citations?user=_le-O14AAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2556755" target="_blank">SSRN</a><br>
-        <a href="src/Shuo_Xia_cv.pdf" target="_blank">CV</a> <i>(Updated Jun 2025)</i>
+  <!-- Side Bar -->
+  <div id="sidebar"></div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Discussion.html">Discussion</a></li>
+        <li><a href="Teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <div>
+      <h2>About Me</h2>
+      <p>Hi, I'm Shuo! I'm a member of the Financial Markets Division and the Head of the Research Group <a href="https://www.iwh-halle.de/en/research/research-groups/detail/governance-and-finance" target="_blank" rel="noopener noreferrer">Governance and Finance</a> at
+        <a href="https://www.iwh-halle.de/en/about-the-iwh/team/detail/shuo-xia" target="_blank" rel="noopener noreferrer"> Halle Institute for Economic Research</a> 
+        and an Assistant Professor of Finance at <a href="https://www.wifa.uni-leipzig.de/en/institut-for-commerce-and-banking" target="_blank" rel="noopener noreferrer"> Leipzig University</a>.
       </p>
-      <nav>
-        <a href="#intro">Introduction</a>
-        <a href="#workingpapers">Working Papers</a>
-        <a href="#publishedpapers">Published Papers</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#discussion">Discussion</a>
-      </nav>
-    </aside>
-    <main class="content">
-      <section id="intro">
-        <h2>Introduction</h2>
-        <p>Hello! I'm Shuo Xia, an Assistant Professor of Finance at IWH and Leipzig University. Welcome to my academic homepage.</p>
-      </section>
+    <br>
+      <h3><u><b>Research Interests:</b></u></h3>
+      <ul>
+        <li>Corporate Finance</li>
+        <li>Corporate Governance</li>
+        <li>Applied Microeconomics</li>
+      </ul>
+    </div>
 
-      <section id="workingpapers">
-        <h2>Working Papers</h2>
-        <p>Here are some of my current working papers:</p>
-        <ul>
-          <li>
-            <b><a href="#">Poison Bonds</a></b>
-            <button onclick="toggleAbstract('abs1')">[Abstract]</button>
-            <p id="abs1" style="display:none;">This paper investigates the governance role of poison bonds in corporate finance...</p>
-          </li>
-          <li>
-            <b><a href="#">Nonstandard Errors</a></b>
-            <button onclick="toggleAbstract('abs2')">[Abstract]</button>
-            <p id="abs2" style="display:none;">This paper explores the implications of nonstandard errors in financial econometrics...</p>
-          </li>
-        </ul>
-      </section>
+  <br><br><br>
+  <!-- Updates Section -->
+   <div>
+    <h2>Updates</h2>
 
+    <!-- Scrollable Section -->
+    <div class="list-section">
+      <ul>
+        <li>
+          <div class="date">Aug 22, 2025</div>
+          <div class="text">
+            My co-author Rex Wang Renjie will present our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://efa2025.efa-meetings.org" target="_blank" rel="noopener noreferrer">EFA 2025</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Aug 17, 2025</div>
+          <div class="text">
+            My co-author Rex Wang Renjie will present our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://events.au.dk/corpfin25/conference" target="_blank" rel="noopener noreferrer">Aarhus Workshop on Strategic Interaction in Corporate Finance 2025</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Jun 13, 2025</div>
+          <div class="text">
+            I presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://www.eur.nl/en/ese/events/ecgc" target="_blank" rel="noopener noreferrer">Erasmus Corporate Governance Conference 2025</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Dec 19, 2024</div>
+          <div class="text">
+            My co-author Stefano Colonnello presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer">Trading Away Incentives</a> at <a href="https://www.paris-december.eu" target="_blank" rel="noopener noreferrer">Paris December Finance Meeting 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Dec 15, 2024</div>
+          <div class="text">
+            I presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://sfs.org/sfs-cavalcade-asia-pacific-2024/" target="_blank" rel="noopener noreferrer">SFS Cavalcade Asia-Pacific 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Dec 14, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://sites.google.com/view/review-of-corporate-finance/2024-boca-ecgi-conference?authuser=0#h.anp0ldpjwudg" target="_blank" rel="noopener noreferrer">5th Boca-ECGI Corporate Finance and Governance Conference</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Nov 21, 2024</div>
+          <div class="text">
+            My co-author Stefano Colonnello presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer">Trading Away Incentives</a> at <a href="https://programme.strategicownership.com" target="_blank" rel="noopener noreferrer">Owners as Strategists Conference 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Nov 16, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer">ESG Investing Beyond Risk and Return</a> at <a href="https://www.ou.edu/price/events/finance/climate-and-energy-research" target="_blank" rel="noopener noreferrer">OU-RFS Climate and Energy Finance Research Conference 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Oct 22, 2024</div>
+          <div class="text">
+            Our institute successfully held the <a href="https://www.iwh-halle.de/ueber-das-iwh/veranstaltungen/detail/10th-iwh-fin-fire-workshop-on-challenges-to-financial-stability" target="_blank" rel="noopener noreferrer">10th IWH-FIN-FIRE Workshop on "Challenges to Financial Stability"</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Jul 05, 2024</div>
+          <div class="text">
+            I presented our papers <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> and <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer">ESG Investing Beyond Risk and Return</a>  at <a href="https://www.fma.org/2024seoul" target="_blank" rel="noopener noreferrer">FMA Asia-Pacific 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Jul 05, 2024</div>
+          <div class="text">
+            I discussted the papers <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3747263" target="_blank" rel="noopener noreferrer">Self-Dealing in Corporate Investment</a>  at <a href="https://www.fma.org/2024seoul" target="_blank" rel="noopener noreferrer">FMA Asia-Pacific 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Jul 11, 2024</div>
+          <div class="text">
+            I presented our papers <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer">Trading Away Incentives</a> and <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer">ESG Investing Beyond Risk and Return</a>  at <a href="http://www.cicfconf.org/past/cicf2024/" target="_blank" rel="noopener noreferrer">CICF 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Jun 30, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://westernfinance.org/conference-2024/" target="_blank" rel="noopener noreferrer">WFA 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Mar 08, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://fbe.unimelb.edu.au/__data/assets/pdf_file/0006/4964514/FDU-2024-Academic-Program-v08Mar.pdf" target="_blank" rel="noopener noreferrer">Finance Down Under 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Feb 26, 2024</div>
+          <div class="text">
+            I discussted the paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4099685" target="_blank" rel="noopener noreferrer">Self-Declared Benchmarks and Fund Manager Intent:
+              “Cheating” or Competing?</a> at <a href="https://www.fma.org/cam2024" target="_blank" rel="noopener noreferrer">FMA Consortium on Asset Management 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Feb 26, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://www.fma.org/cam2024" target="_blank" rel="noopener noreferrer">FMA Consortium on Asset Management 2024</a>.
+          </div>
+        </li>
+        <li>
+          <div class="date">Feb 24, 2024</div>
+          <div class="text">
+            My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://www.law.nyu.edu/centers/pollackcenterlawbusiness/events/nyupennconference" target="_blank" rel="noopener noreferrer">18th NYU/Penn Conference on Law and Finance</a>.
+          </div>
+        </li>
+      </ul>
+    </div>
+ </div>
 
-      <section id="publishedpapers">
-        <h2>Published Papers</h2>
-        <ul>
-          <li>
-            <b><a href="https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/corporate-investment-benefits-of-mutual-fund-dual-holdings/2D431805476741E0E1F777FD85424510" target="_blank">The Corporate Investment Benefits of Mutual Fund Dual Holdings</a></b>
-            with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
-            and <a href="https://sites.google.com/site/patrickverwijmeren/" target="_blank" rel="noopener noreferrer">Patrick Verwijmeren</a>, 
-            <span class="journal">Journal of Financial and Quantitative Analysis, 2025</span>
-          </li>
-          <li>
-            <b><a href="https://onlinelibrary.wiley.com/doi/10.1111/jofi.13337" target="_blank">Nonstandard Errors</a></b>
-            with <a href="https://albertjmenkveld.com" target="_blank" rel="noopener noreferrer">Albert Menkveld</a> et al., 
-            <span class="journal">Journal of Finance, 2024</span>
-          </li>
-        </ul>
-      </section>
+  <!-- visitor map Section -->
+<div style="width: 500px;height: 300px;margin: 0 auto; margin-top: 30;">
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=Tyka5pHMopjQ5mA8bTQnH4LWNvB3pOUxmOTuXRkCv-M'></script>  </div>
+</div>
 
-      <section id="teaching">
-        <h2>Teaching</h2>
-        <p>I teach graduate courses in corporate finance and corproate governance.</p>
-      </section>
+<script>
+  // Fetch and load the sidebar dynamically
+  fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('sidebar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading sidebar:', error));
+</script>
 
-      <section id="discussion">
-        <h2>Discussion</h2>
-        <p>Occasionally I share reflections on finance and governance topics here.</p>
-      </section>
-    </main>
-  </div>
 </body>
+
 </html>

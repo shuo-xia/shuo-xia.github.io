@@ -1,0 +1,167 @@
+/* styles.css */
+
+body {
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 25%; /* Ensure this matches the main-content margin */
+    min-width: 250px;  /* Prevent the sidebar from shrinking too much */
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed; /* Keeps the sidebar fixed */
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.sidebar img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+}
+
+.sidebar .title-section h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .title-section p,
+.sidebar .email,
+.sidebar .contact-info {
+    font-family: 'Garamond', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: calc(25% + 20px); /* Matches sidebar width + padding */
+    width: calc(75% - 20px); /* Adjusts for remaining space */
+    padding: 20px; 
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+ol ol {
+    margin-top: 5px;
+    padding-left: 25px;
+    list-style-type: circle;
+    font-size: 0.9em;
+    color: black;
+}
+
+ol ol li {
+    margin-bottom: 7px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* CSS for Scrollable Section */
+
+.list-section {
+    max-height: 300px; /* Set a maximum height for the scrollable section */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add padding for better readability */
+    margin-top: 10px; /* Small gap above the section */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Ensure each list item is aligned properly */
+.list-section ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Align date and text side by side */
+.list-section li {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Style for the date */
+.list-section .date {
+    flex: 0 0 120px; /* Fixed width for the date */
+    font-weight: bold; /* Highlight the date */
+    margin-right: 10px; /* Add space between date and text */
+    color: #333; /* Darker color for better readability */
+    text-align: right; /* Align the date text to the right */
+}
+
+/* Style for the text */
+.list-section .text {
+    flex: 1; /* Allow the text to take the remaining space */
+    color: #555; /* Subtle color for the text */
+    line-height: 1.6; /* Improve readability */
+}

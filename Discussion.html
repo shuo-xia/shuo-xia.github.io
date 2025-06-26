@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shuo Xia 夏烁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <!-- Side Bar -->
+  <div id="sidebar"></div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Discussion.html">Discussion</a></li>
+        <li><a href="Teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
+
+    <!-- Discussions Main Section -->
+    <div>
+      <h1>Discussions</h1>
+      <ul>
+        <li class="paper" words="">
+          2024 DGF: MACs matter: the impact of Material adverse change clauses on corporate
+          takeover dynamics in Germany, By Osei, Pollmann, and Schwetzle<br>
+        </li>
+        <li class="paper" words="">
+            2024 FMA Asia-Pacific: Self-Dealing in Corporate Investment, By Décaire, and Sosyura<br>
+        </li>
+        <li class="paper" words="">
+            2024 FMA Consortium on Asset Management: Self-Declared Benchmarks and Fund Manager Intent: “Cheating” or Competing?, By Chen, Evans, and Sun<br>
+            <i>Forthcoming in Journal of Financial Economics</i>
+        </li>
+        <li class="paper" words="">
+            2023 ECGC: Governance Reallocation by Institutional Owners, By Garcia, Martin-Flores, and Remesal
+        </li>
+        <li class="paper" words="">
+            2023 FMA-EU: Why Do Non-financial Firms Hold Financial Assets?, By Degryse and Zhao
+        </li>
+        <li class="paper" words="">
+            2023 SDU Finance Workshop: Window Dressing on Bank Problem Loans: Evidence from Natural Disaster Responses, By Ahn and Gam<br>
+            <i>Published in Journal of Accounting and Public Policy, 2024</i>
+        </li>
+        <li class="paper" words="">
+            2023 SKEMA Corporate Restructuring Conference: Trading Off Stakeholder Interests: Evidence from Antitrust Investigations, By Cestone, Li, and Volpin
+        </li>
+        <li class="paper" words="">
+            2022 EFA: The Innovation Arms Race, By Ahmad, de Bodt, and Harford
+        </li>  
+        <li class="paper" words="">
+            2022 FMA-EU: Venture Capitalist Directors and Managerial Incentives, By Litov, Liu, Megginson, and Sitorus<br>
+            <i>Published in Journal of Corporate Finance, 2024</i>
+        </li>  
+        <li class="paper" words="">
+            2022 MFS: Cross-border Mergers and Home Country Corruption, By Refakar and Gueyie
+        </li>   
+        <li class="paper" words="">
+            2022 FMCG: Market Responses to Government Control of Privatized Firms: Quasi-Experimental Evidence from Chinese Listed Firms, By Mavis and Pal
+        </li>   
+        <li class="paper" words="">
+            2021 DGF: The Voting Premium, By Levit, Malenko, and Maug
+        </li>   
+        <li class="paper" words="">
+            2019 Paris December Finance Meeting: Why Do Boards Let Their CEOs Take Outside Directorship? Entrenchment and Embeddedness, By Hertzel and Zhao
+        </li>   
+        <li class="paper" words="">
+            2019 DGF: Do Cross-border Secondary Buyouts Hurt Portfolio Firms' Operating Performance, By Härtela and Martin
+        </li>   
+        <li class="paper" words="">
+            2018 Rotterdam Executive Compensation Conference: Hedge Fund Activism and CEO Compensation, By Fidrmuc and Kanoria
+        </li>                   
+        <li class="paper" words="">
+            2017 AFBC: Capital Gains Tax, Investments, and CEO Incentives, By Moon<br> 
+            <i>Published in American Economic Review, 2022</i>
+        </li>                  
+        <li class="paper" words="">
+            2017 TI lunch seminar: Connected Firms and Investor Myopia, By Ginglinger, Hebert, and Renneboog
+        </li>                       
+        <li class="paper" words="">
+            2016 PFMC: Uncovering the Role of Sentiment: Evidence From CEO Dismissals, By Hauf and Younes
+        </li>                                                                                            
+    </ul>
+    </div>
+  </div>
+  
+  <script>
+    // Fetch and load the sidebar dynamically
+    fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('sidebar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+  </script>
+
+</body>
+
+</html>
